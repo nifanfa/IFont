@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFont", "IFont\IFont.csproj", "{EF82F14B-BB36-46FF-B9D2-6EFC16660A3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF82F14B-BB36-46FF-B9D2-6EFC16660A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF82F14B-BB36-46FF-B9D2-6EFC16660A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF82F14B-BB36-46FF-B9D2-6EFC16660A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF82F14B-BB36-46FF-B9D2-6EFC16660A3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFD9C5BE-E8B1-49B9-BA14-3FCB0C3DAB72}
+	EndGlobalSection
+EndGlobal
