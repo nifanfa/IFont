@@ -35,8 +35,8 @@ namespace IFont
             }
             g.Clear(Color.Transparent);
             StringFormat stf = new StringFormat();
-            stf.Alignment = StringAlignment.Center;
-            stf.LineAlignment = StringAlignment.Center;
+            stf.Alignment = StringAlignment.Near;
+            stf.LineAlignment = StringAlignment.Near;
             g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             for (int i = 0; i < charset.Length; i++)
             {
