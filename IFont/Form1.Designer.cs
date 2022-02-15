@@ -73,7 +73,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(92, 23);
             this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "16";
+            this.textBox2.Text = "12";
             // 
             // label1
             // 
