@@ -37,8 +37,8 @@ namespace IFont
             StringFormat stf = new StringFormat();
             stf.Alignment = StringAlignment.Center;
             stf.LineAlignment = StringAlignment.Center;
-            g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
-            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             for (int i = 0; i < charset.Length; i++)
             {
                 Rectangle rect = new Rectangle(0, i * fheight, fwidth-1, fheight-1);
