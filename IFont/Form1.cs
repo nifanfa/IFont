@@ -42,7 +42,7 @@ namespace IFont
             {
                 Rectangle rect = new Rectangle(0, i * fheight, fwidth-1, fheight-1);
                 //g.DrawRectangle(Pens.Red, rect);
-                g.DrawString(charset[i].ToString(), font, Brushes.Black, rect, stf);
+                g.DrawString(charset[i].ToString(), font, Brushes.White, rect, stf);
             }
             string outputname = "output.png";
             bmp.Save(outputname);
