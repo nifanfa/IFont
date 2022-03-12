@@ -35,7 +35,7 @@ namespace IFont
             }
             g.Clear(Color.Transparent);
             StringFormat stf = new StringFormat();
-            stf.Alignment = StringAlignment.Center;
+            stf.Alignment = StringAlignment.Near;
             stf.LineAlignment = StringAlignment.Center;
             g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
