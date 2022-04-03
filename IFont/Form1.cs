@@ -21,29 +21,39 @@ namespace IFont
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string charset = textBox1.Text;
-            int fwidth = Convert.ToInt32(textBox2.Text);
-            int fheight = Convert.ToInt32(textBox3.Text);
-            float bestfontw = fwidth;
-            Font font = new Font(ft.FontFamily, bestfontw, ft.Style);
-            Bitmap bmp = new Bitmap(fwidth, fheight * charset.Length);
+            string Charset = textBox1.Text;
+            int FontWidth = Convert.ToInt32(textBox2.Text);
+            int FontHeight = FontWidth;
+
+            float BestFontSize = FontWidth;
+
+            Font font = new Font(ft.FontFamily, BestFontSize, ft.Style);
+            Bitmap bmp = new Bitmap(FontWidth, FontHeight * Charset.Length);
             Graphics g = Graphics.FromImage(bmp);
-            for (int i = 0; i < charset.Length; i++)
+
+            for (int i = 0; i < Charset.Length; i++)
             {
-                while (g.MeasureString(charset[i].ToString(), font).Width > fwidth)
-                    font = new Font(ft.FontFamily, bestfontw-=0.01f, ft.Style);
+                while (g.MeasureString(Charset[i].ToString(), font).Width > FontWidth)
+                    font = new Font(ft.FontFamily, BestFontSize-=0.01f, ft.Style);
             }
+
+            for (int i = 0; i < Charset.Length; i++)
+            {
+                while (g.MeasureString(Charset[i].ToString(), font).Height > FontHeight)
+                    font = new Font(ft.FontFamily, BestFontSize -= 0.01f, ft.Style);
+            }
+
             g.Clear(Color.Transparent);
             StringFormat stf = new StringFormat();
             stf.Alignment = StringAlignment.Near;
             stf.LineAlignment = StringAlignment.Center;
             g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            for (int i = 0; i < charset.Length; i++)
+            for (int i = 0; i < Charset.Length; i++)
             {
-                Rectangle rect = new Rectangle(0, i * fheight, fwidth-1, fheight-1);
+                Rectangle rect = new Rectangle(0, i * FontHeight, FontWidth-1, FontHeight-1);
                 //g.DrawRectangle(Pens.Red, rect);
-                g.DrawString(charset[i].ToString(), font, Brushes.White, rect, stf);
+                g.DrawString(Charset[i].ToString(), font, Brushes.White, rect, stf);
             }
             string outputname = "FONT.PNG";
             bmp.Save(outputname);

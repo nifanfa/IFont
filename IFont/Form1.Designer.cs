@@ -33,8 +33,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -73,41 +71,22 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(92, 23);
             this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "12";
+            this.textBox2.Text = "24";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(302, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 17);
+            this.label1.Size = new System.Drawing.Size(63, 17);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Font Width:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(302, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Font Height:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(302, 81);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(92, 23);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.Text = "16";
+            this.label1.Text = "Font Size:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 187);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button2);
@@ -127,7 +106,5 @@
         private Button button2;
         private TextBox textBox2;
         private Label label1;
-        private Label label2;
-        private TextBox textBox3;
     }
 }
