@@ -52,7 +52,7 @@ namespace IFont
             StringFormat stf = new StringFormat();
             stf.Alignment = StringAlignment.Near;
             stf.LineAlignment = StringAlignment.Center;
-            g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             int X = 0, Y = 0;
             for (int i = 0; i < Charset.Length; i++)
